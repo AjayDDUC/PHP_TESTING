@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	input
+	{
+		width: 100px;
+		height: 75px;
+		margin: 0px;
+	}
+	#view
+	{
+		width: 410px;
+		height 30px;
+		text-align: right;
+		background-color: gray;
+	}
+	#clear
+	{
+		width: 410px;
+		height: 75x;
+	}
+	</style>
+	<script >
+		function display(n1) 
+		{	
+				view.value=view.value+n1;
+		}
+
+		function Clear()
+		{
+			view.value="";
+		}
+	
+	</script>
+	<title>Cali</title>
+</head>
+<body  >
+<form  name="Cali" style="text-align: center;">
+	<input id="view" type="button"  value="0"><br>
+	<input type="button" value="7" name="btn7" onclick="display(btn7.value)">
+	<input type="button" value="8" name="btn8" onclick="display(btn8.value)">
+	<input type="button" value="9" name="btn9" onclick="display(btn9.value)">
+	<input type="button" value="+" name="btnadd" onclick="display(btnadd.value)"><br>
+	<input type="button" value="4" name="btn4" onclick="display(btn4.value)">
+	<input type="button" value="5" name="btn5" onclick="display(btn5.value)">
+	<input type="button" value="6" name="btn6" onclick="display(btn6.value)">
+	<input type="button" value="-" name="btnsub" onclick="display(btnsub.value)"><br>
+	<input type="button" value="1" name="btn1" onclick="display(btn1.value)">
+	<input type="button" value="2" name="btn2" onclick="display(btn2.value)">
+	<input type="button" value="3" name="btn3" onclick="display(btn3.value)">
+	<input type="button" value="*" name="btnmul" onclick="display(btnmul.value)"><br>
+	<input type="button" value="0" name="btn0" onclick="display(btn0.value)">
+	<input type="button" value="." name="btndot" onclick="display(btndot.value)">
+	<input type="button" value="=" name="btnequal" onclick="view.value=eval(view.value)">
+	<input type="button" value="/" name="btndiv" onclick="display(btndiv.value)"><br>
+	<input type="button" id="clear" value="Clear" onclick="Clear()">
+
+
+</form>
+ 
+</body>
+</html>

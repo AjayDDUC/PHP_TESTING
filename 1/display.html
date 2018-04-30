@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script >
+		function display() {
+			var url_String=window.location.href;
+			var url=new URL(url_String);
+			var paramValue=url.searchParams.get("name");
+			document.getElementById("view").innerHTML=paramValue;
+		}
+	</script>
+	<title>View</title>
+</head>
+<body onload="display()">
+
+<table align="center" cellspacing="25px" bgcolor="lightblue">
+		<tr>
+			<td >Name</td>
+			<td><label id="name"></label></td>
+			<td >Last</td>
+			<td><input type="text" name="last" placeholder="Last Name"></td>
+		</tr>
+		<tr>
+			<td >Gender:</td>
+			<td "><input type="radio" name="gender" checked="true" checked="true">Male <input type="radio" name="gender">Female</td>
+			<td >Marks</td><td ><input type="number" name="marks" placeholder="Pin Number"></td>
+		</tr>
+
+		<tr>
+			<td >Roll</td>
+			<td><input type="text" name="roll" placeholder="Roll"  ></td>
+			<td >Mob.:</td>
+			<td><input type="text" name="mob" placeholder="Moblie Number"   maxlength="10"></td>
+		</tr>
+
+		<tr>
+			<td >Course:</td>
+			<td>
+			</td>
+			<td >Collage:</td>
+			<td>
+			</td>			
+		</tr>
+
+		<tr>
+			<td>Address:</td>
+			<td><textarea name="address" placeholder="Address" style="width: 90%; "></textarea></td>
+		</tr>
+		<tr>
+			<td><input type="submit" onclick="display()" ><input type="reset" name=""></td>
+		</tr>
+	</table>
+</body>
+</html>
